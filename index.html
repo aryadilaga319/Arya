@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet"  type="text/css" href="style.css" >
+    </head>
+<body>
+    <div class="container">
+        <div class="valentines">
+            <div class="envelope">
+                <div class="card">
+                    <div class="text">
+                         <br> All in<br>Siapa<br> 01 laa
+                    </div>
+                    <!--<img class="contact" src="contact.png">-->
+                    <div class="contact"></div>
+                </div>
+            </div>
+            <div class="front"></div>
+        </div>
+    </div> 
+   <button id="play">Putar Musiknya Maseh</button>
+   <script>
+        let play = document.getElementById("play");
+            function playMusic() {
+             let audio = new Audio("audio.mp3");
+             audio.play()
+          }
+          play.addEventListener("click", playMusic);
+   </script>
+</body>
+</html>
